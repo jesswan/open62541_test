@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="client" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/client" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lws2_32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/client" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="client_connect_loop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="include/ua_client.h" />
+		<Unit filename="include/ua_client_config.h" />
+		<Unit filename="include/ua_client_highlevel.h" />
+		<Unit filename="include/ua_client_highlevel_async.h" />
+		<Unit filename="include/ua_client_subscriptions.h" />
+		<Unit filename="include/ua_constants.h" />
+		<Unit filename="include/ua_plugin_access_control.h" />
+		<Unit filename="include/ua_plugin_log.h" />
+		<Unit filename="include/ua_plugin_network.h" />
+		<Unit filename="include/ua_plugin_nodestore.h" />
+		<Unit filename="include/ua_plugin_pki.h" />
+		<Unit filename="include/ua_plugin_pubsub.h" />
+		<Unit filename="include/ua_plugin_securitypolicy.h" />
+		<Unit filename="include/ua_server.h" />
+		<Unit filename="include/ua_server_config.h" />
+		<Unit filename="include/ua_server_pubsub.h" />
+		<Unit filename="include/ua_types.h" />
+		<Unit filename="include/ua_util.h" />
+		<Unit filename="open62541.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="open62541.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
